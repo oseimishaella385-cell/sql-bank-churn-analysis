@@ -85,6 +85,12 @@ Business problem: The bank has seen an increase in customer attrition over the p
   (These can't fail - which means they can't succeed either.)
 -->
 
+ **Primary Objective:** Measure the overall churn rate
+- **Secondary Objective 1:** Identify the characteristics of customers who leave
+- **Secondary Objective 2:** Compare churned and retained customers
+- **Secondary Objective 3:** Identify high- value customers at risks
+- recommended actions to reduce churn.
+- 
 - **Primary Objective:** [The main thing you set out to do]
 - **Secondary Objective 1:** [Supporting goal]
 - **Secondary Objective 2:** [Supporting goal]
