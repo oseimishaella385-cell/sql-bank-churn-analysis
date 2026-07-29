@@ -1,5 +1,6 @@
-# [Project Title]
-> *One sentence. What did you analyze, build, or solve - and why does it matter?*
+# What factors are associated with customer churn, and what actions should the bank take to improve customer retention?
+Business problem: The bank has seen an increase in customer attrition over the past year. Senior management wants to understand which customers are leaving and identify strategies to improve retention.
+
 
 ---
 
