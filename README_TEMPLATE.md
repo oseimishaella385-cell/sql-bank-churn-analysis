@@ -38,32 +38,14 @@ Business problem: The bank has seen an increase in customer attrition over the p
 
 ## 1. Project Overview
 
-<!--
-  Write 3–5 sentences in plain language.
-  Cover: context → problem → approach → outcome.
-  Read it out loud. If it sounds like a form - rewrite it.
+**Context:** A mid-sized bank experienced a noticeable increase in customer attrition over the previous 12 months but lacked a clear understanding of which customers were leaving and why. Management required a better understanding of which customers were leaving and the factors associated with churn.
 
-  WHAT GOOD LOOKS LIKE:
-  "A mid-size retail business was seeing inconsistent revenue across
-  its regional stores but couldn't identify the root cause. This project
-  explored 18 months of transaction data across five regions to determine
-  whether underperformance was driven by sales volume, pricing, or return
-  rates. The analysis revealed that one region's gap was almost entirely
-  explained by an unusually high return rate on a single product category -
-  a finding invisible in the company's top-level reporting."
+**Problem Statement:** What factors are associated with customer churn, and what actions should the bank take to improve customer retention?
 
-  WHAT TO AVOID:
-  "This project analyzes sales data to find trends and insights."
-  (Too vague. Could describe 10,000 projects. Describes none of them.)
--->
+**Approach:** Customer data was analysed using SQL to calculate churn rates, Segment customers by demographic, behavioural and financial characteristics, and identify high-risk customer groups.
 
-**Context:** [The business, research, or personal situation that motivated this project.]
+**Outcome:** The analysis identified several customer characteristics associated with higher churn, including age, inactivity, product ownership and account balance. The final deliverable was an interactive dashboard that provides management with actionable insights to prioritise customer retention initiatives
 
-**Problem Statement:** [The specific question or challenge you were addressing.]
-
-**Approach:** [In 1–2 sentences - how did you tackle it?]
-
-**Outcome:** [What did you produce or discover?]
 
 ---
 
@@ -85,19 +67,11 @@ Business problem: The bank has seen an increase in customer attrition over the p
   (These can't fail - which means they can't succeed either.)
 -->
 
- **Primary Objective:** Measure the overall churn rate
-- **Secondary Objective 1:** Identify the characteristics of customers who leave
-- **Secondary Objective 2:** Compare churned and retained customers
-- **Secondary Objective 3:** Identify high- value customers at risks
-- recommended actions to reduce churn.
-- 
-- **Primary Objective:** [The main thing you set out to do]
-- **Secondary Objective 1:** [Supporting goal]
-- **Secondary Objective 2:** [Supporting goal]
-- **Secondary Objective 3:** [Remove if not applicable]
-
-> 💡 *Every analysis decision in this project traces back to one of these objectives.*
-
+ **Primary Objective:** Measure the overall churn rate and identify the key factors associated with customer attrition.
+- **Secondary Objective 1:** Identify the characteristics of customers who are most likely to churn
+- **Secondary Objective 2:** Compare the financial profiles of churned and retained customers
+- **Secondary Objective 3:** Identify high-risk customer segments to prioritise retention efforts.
+- **Secondary Objective 4:** Recommend data-driven actions to improve customer retention
 ---
 
 ## 3. Project Scope & Tools
@@ -133,13 +107,12 @@ Business problem: The bank has seen an increase in customer attrition over the p
 
 | Category | Tool(s) Used |
 |----------|-------------|
-| Data Storage | [e.g., PostgreSQL, CSV files, BigQuery, S3] |
-| Data Processing | [e.g., Python, R, SQL, Excel, dbt] |
-| Analysis | [e.g., pandas, dplyr, custom SQL queries] |
-| Visualization | [e.g., Matplotlib, Tableau, Power BI, Looker] |
-| Version Control | [e.g., Git / GitHub] |
-| Documentation | [e.g., Markdown, Notion] |
-| Other | [Any additional tools] |
+| Data Storage |  CSV files |
+| Data Processing |  SQL, Excel |
+| Analysis | custom SQL queries |
+| Visualisation |  Power BI |
+| Version Control | GitHub |
+| Documentation |  Markdown, Notion] |
 
 ---
 
