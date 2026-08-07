@@ -198,19 +198,28 @@ Business problem: The bank has seen an increase in customer attrition over the p
      if a formal schema doesn't apply. Even one paragraph is more helpful than nothing.
 -->
 
-### Dataset / Table: `[name]`
+### Dataset / Table: `Customers`
 
 | Field Name | Data Type | Description | Example Value |
 |------------|-----------|-------------|---------------|
-| `[field_1]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
-| `[field_2]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
-| `[field_3]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
+| `CustomerId` |  INT |Unique identifier for each customer| 15634602 |
+| `CreditScore` | INT | Customer credit score | 619 |
+| `Geography` | VARCHAR | Customer's Country | France |
+| `Gender` | VARCHAR| Customer gender| Female|
+| `Age | INT| Customer age |42|
+|Tenure | INT | Years as a customer | 2 |
+| Balance | DECIMAL | Current account balance |83807.86|
+|NumOfProducts| INT | Number of products held | 2 |
+| HasCrCard | BOOLEAN (0/1) | Credit card ownership | 1 |
+| IsActiveMember | BOOLEAN (0/1) | Active membership status | 1 |
+| EstimatedSalary | DECIMAL | Estimated annual salary (£) | 101348.88|
+| Exited | BOOLEAN (0/1) | Customer churn indicator | 1 |
 
-> **Row count (approx.):** [X rows]
-> **Date range:** [Start] – [End]
-> **Key join / relationship:** [e.g., `orders.customer_id` → `customers.id`]
+> **Row count (approx.):** [10,000 rows]
+> **Date range:** 2024
+> **Key join / relationship:** None (single-table dataset)
 
-*Add additional table blocks as needed for multi-table projects.*
+
 
 ---
 
