@@ -152,26 +152,6 @@ Business problem: The bank has seen an increase in customer attrition over the p
 
 ## 5. Data Workflow
 
-<!--
-  Show how data moved through your project - from source to output.
-  Every transformation decision should be traceable here.
-
-  WHAT GOOD LOOKS LIKE:
-  1. Source: "Monthly CSV exports pulled from the internal POS system.
-              Five files, one per region, covering Jan 2023–Jun 2024."
-  2. Ingestion: "Loaded into Python using pandas. Files concatenated into
-                 a single dataframe (approx. 340,000 rows)."
-  3. Cleaning: "Removed 1.2% of rows with null transaction IDs.
-                Standardised date formats across regional files.
-                Resolved product category naming inconsistencies (3 variants → 1)."
-  4. Transformation: "Created a returns_rate field at product-category level.
-                      Aggregated to weekly and regional grain for trend analysis."
-  5. Analysis: "Descriptive statistics, regional comparison, return rate
-                segmentation by product category."
-  6. Output: "Summary report (PDF), annotated notebook, processed CSV."
-
-  WHAT TO AVOID:
-  ❌ "Data was cleaned and analysed." (No chain. No decisions. No trust.)
 -->
 
 ```
@@ -186,12 +166,12 @@ Business problem: The bank has seen an increase in customer attrition over the p
 [Output / Visualisation / Reporting]
 ```
 
-1. **Source:** [Where did the data come from? Format, size, access method.]
-2. **Ingestion:** [How was it brought in?]
-3. **Cleaning:** [What issues did you find and fix?]
-4. **Transformation:** [What new fields, aggregations, or structures did you create?]
-5. **Analysis:** [What methods - statistical, visual, query-based, model-based?]
-6. **Output:** [What form do the results take?]
+1. **Source:** Bank Customer Churn Prediction Dataset downloaded from Kaggle. One CSV file containing 10,000 customer records across three countries (France, Germany and Spain), with demographic, behavioural and financial attributes.
+2. **Ingestion:** Imported the CSV into MySQL using the Table Data Import Wizard. Data was stored in a relational table and queried using SQL before being imported into Power BI for visualisation.
+3. **Cleaning:** Validated the dataset for missing values and duplicate records. Removed non-analytical fields (CustomerId and Surname) as they were not required for customer segmentation or churn analysis. Verified data types and binary variables (0/1) for consistency.
+4. **Transformation:** Converted binary fields into descriptive categories (e.g. Stayed/Churned, Active/Inactive, Credit Card Yes/No). Created age, balance and income groups to support customer segmentation. Calculated churn metrics and summary statistics for demographic, behavioural and financial analysis.
+5. **Analysis:** Query-based analysis using SQL with descriptive statistics (counts, averages, medians and percentages) to measure churn, compare customer segments and identify high-risk groups.
+6. **Output:** Summary report (Power BI), processed CSV
 
 ---
 
