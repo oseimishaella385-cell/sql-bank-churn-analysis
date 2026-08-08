@@ -218,6 +218,7 @@ Business problem: The bank has seen an increase in customer attrition over the p
 > **Row count (approx.):** [10,000 rows]
 > **Date range:** 2024
 > **Key join / relationship:** None (single-table dataset)
+> **Primary Key** CustomerId
 
 
 
