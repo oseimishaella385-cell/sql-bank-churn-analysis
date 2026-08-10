@@ -51,22 +51,6 @@ Business problem: The bank has seen an increase in customer attrition over the p
 
 ## 2. Objectives
 
-<!--
-  Write objectives that are specific enough to succeed or fail.
-  Use action-oriented verbs: Identify, Determine, Quantify, Build, Evaluate.
-
-  WHAT GOOD LOOKS LIKE:
-  ✅ "Determine whether customer churn rate correlates with support ticket volume."
-  ✅ "Identify the top three revenue-driving product categories across all regions."
-  ✅ "Build a reproducible pipeline that ingests and cleans daily sales exports."
-
-  WHAT TO AVOID:
-  ❌ "Explore the data."
-  ❌ "Gain insights."
-  ❌ "Understand trends."
-  (These can't fail - which means they can't succeed either.)
--->
-
  **Primary Objective:** Measure the overall churn rate and identify the key factors associated with customer attrition.
 - **Secondary Objective 1:** Identify the characteristics of customers who are most likely to churn
 - **Secondary Objective 2:** Compare the financial profiles of churned and retained customers
@@ -78,7 +62,6 @@ Business problem: The bank has seen an increase in customer attrition over the p
 
 ### Scope
 
-
 | Dimension | Details |
 |-----------|---------|
 | **In Scope** | Customer-level data for 10,000 bank customers across France, Germany and Spain. Analysis covers customer demographics, behaviour, financial characteristics, churn rates and high-risk customer segments.
@@ -87,11 +70,6 @@ Business problem: The bank has seen an increase in customer attrition over the p
 | **Granularity** | Customer level, with one row representing one customer and 10,000 records in total.|
 
 ### Tools & Technologies
-
-<!--
-  List only what you actually used on this project.
-  This is not your skills section - it's the project's technical context.
--->
 
 | Category | Tool(s) Used |
 |----------|-------------|
@@ -143,15 +121,20 @@ Business problem: The bank has seen an increase in customer attrition over the p
 -->
 
 ```
-[Data Source(s)]
+[Kaggle CSV Dataset]
+10,000 bank customers
       ↓
-[Ingestion / Collection Method]
+[MySQL Ingestion]
+CSV imported into `customers` table
       ↓
 [Cleaning & Transformation]
+Data validation - Binary labels - Customer groupings
       ↓
-[Analysis / Modelling / Querying]
+[SQL Analysis]
+Churn KPIs - Hypothesis testing - Segmentation - Financial analysis
       ↓
-[Output / Visualisation / Reporting]
+[Power BI]
+Interactive dashboard - key insights - retention recommendations
 ```
 
 1. **Source:** Bank Customer Churn Prediction Dataset downloaded from Kaggle. One CSV file containing 10,000 customer records across three countries (France, Germany and Spain), with demographic, behavioural and financial attributes.
@@ -164,27 +147,6 @@ Business problem: The bank has seen an increase in customer attrition over the p
 ---
 
 ## 6. Data Model & Schema
-
-<!--
-  Define your fields so that someone reading your analysis can follow along
-  without digging through your code.
-
-  WHAT GOOD LOOKS LIKE (one row example):
-  | transaction_id | string | Unique identifier per sales transaction | TXN-00482 |
-  | return_flag    | boolean | Whether the transaction included a return | TRUE |
-  | region_code    | string | Two-letter identifier for store region | "NE" |
-
-  WHAT TO AVOID:
-  ❌ Skipping this section because "the field names are self-explanatory."
-     They're not. Not to a reviewer. Not to you in six months.
-
-  📌 FOR SQL PROJECTS: If you have multiple tables, create one block per table.
-     Describe join keys and relationships here. Your ERD (Section 7) will
-     visualise what this section describes in text.
-
-  📌 FOR NON-SQL PROJECTS: Describe the shape of your dataset informally
-     if a formal schema doesn't apply. Even one paragraph is more helpful than nothing.
--->
 
 ### Dataset / Table: `Customers`
 
@@ -203,8 +165,8 @@ Business problem: The bank has seen an increase in customer attrition over the p
 | `EstimatedSalary` | DECIMAL | Estimated annual salary (£) | 101348.88|
 | `Exited` | BOOLEAN (0/1) | Customer churn indicator | 1 |
 
-> **Row count (approx.):** [10,000 rows]
-> **Date range:** 2024
+> **Row count (approx.):** 10,000 rows
+> **Date range:** Not applicable
 > **Key join / relationship:** None (single-table dataset)
 > **Primary Key** CustomerId
 
@@ -306,59 +268,54 @@ erDiagram
 
 ## 8. Analysis & Metrics
 
-<!--
-  Explain what you measured and how - before you share what you found.
-
-  WHAT GOOD LOOKS LIKE:
-  Metric: "Customer Return Rate"
-  Definition: "Number of transactions flagged as returns divided by total
-               transactions, calculated at product-category and regional grain."
-  Why It Matters: "Return rate - not sales volume - was hypothesised to
-                  explain regional revenue gaps. This metric tests that hypothesis."
-
-  WHAT TO AVOID:
-  ❌ Defining a metric only in code: SUM(returns) / COUNT(transaction_id)
-     That's an implementation. Write the plain-language definition here.
-     Both belong in your project - the definition in the README,
-     the implementation in the code.
--->
-
 ### Analytical Approach
+This project used exploratory and descriptive analysis to investigate the factors associated with customer churn. SQL was used to establish the overall churn baseline before comparing churn rates across demographic, behavioural and financial customer segments.
 
-[Describe how you approached the analysis. Were you exploring patterns? Testing a hypothesis? Building and validating a pipeline? Be honest about your method - exploratory work is valid, just call it that.]
+The analysis began by testing the hypothesis that customers with less than one year of tenure would have a higher churn rate, before expanding into broader demographic factors such as age, geography and gender and behavioural factors including tenure, product ownership and membership activity.
+
+Financial characteristics were then analysed by comparing churned and retained customers and examining churn rates across different balance groups. Finally, multi-factor segmentation was used to identify high-risk customer groups and translate the findings into targeted retention recommendations.
+
 
 ### Key Metrics Defined
 
 | Metric | Plain-Language Definition | Why It Matters |
 |--------|--------------------------|----------------|
-| `[Metric 1]` | [What it measures, in one sentence] | [What decision or question it answers] |
-| `[Metric 2]` | [What it measures, in one sentence] | [What decision or question it answers] |
-| `[Metric 3]` | [What it measures, in one sentence] | [What decision or question it answers] |
+| `Overall Churn Rate` | Percentage of all customers who exited the bank. | Establishes the 20.37% baseline against which customer segments can be compared.
+| `Segment Churn Rate` | Percentage of customers within a specific group who churned. | Identifies demographic, behavioural and financial groups with above-average churn. |
+| `Churned Customers` | Number of customers who exited the bank. | Shows the actual volume of customer attrition alongside percentage rates. |
+| `Average Customer Balance`| Mean account balance across customers| Provides an overview of the financial value held within the customer base.|
+| `Balance Held by Churned Customers` | Total account balance associated with customers classified as churned. | Indicates the potential financial significance of customer attrition, without assuming the full balance was lost by the bank.|
+| Median Estimated Salary | Middle estimated salary when customers are ordered by salary. | Allows comparison between churned and retained customers while reducing the influence of extreme salary values.|
+|`Average Credit Score`| Mean credit score within a customer group. | Helps determine whether credit profile differs meaningfully between retained and churned customers.|
 
 ### Methods Used
-
-- [e.g., Descriptive statistics - distribution, central tendency, outlier detection]
-- [e.g., Trend analysis across [time period]]
-- [e.g., Segmentation / group comparison by [dimension]]
-- [e.g., Correlation analysis between [variable A] and [variable B]]
-- [e.g., SQL window functions for [specific aggregation]]
-- [e.g., Custom aggregation or transformation logic in [tool]]
-
----
-
+Descriptive statistics — counts, percentages, averages and medians.
+Segmentation analysis — compared churn across demographic, behavioural and financial customer groups.
+Churned vs retained comparison — compared the financial profiles of customers who stayed and exited.
+Multi-factor analysis — combined product ownership and membership activity to identify high-risk segments.
+SQL aggregation and conditional logic — used COUNT(), SUM(), AVG(), CASE and GROUP BY to produce analytical outputs.
+.
 ## 9. Key Insights
 
 **Insight 1: [Middle-aged customers represent the highest churn risk]**
-[Customers aged 50-59 recorded the highest churn rate at 56%, considerably above the 20.37% overall churn rate. Churn was also elevated among customers aged 40-49 and 60-69, suggesting retention efforts should place greater focus on middle-aged and older segments.]
+Customers aged 50-59 recorded the highest churn rate at 56%, considerably above the 20.37% overall churn rate. Churn was also elevated among customers aged 40-49 and 60-69, suggesting retention efforts should place greater focus on middle-aged and older segments.
 
 **Insight 2: [Customer engagement is strongly associated with retention.]**
-[Inactive members recorded a 27% churn rate compared with 14% for active members, making inactivity one of the clearest behavioural factors associated with churn. This implies increasing customer engagement could be an important opportunity for improving retention.] 
+Inactive members recorded a 27% churn rate compared with 14% for active members, making inactivity one of the clearest behavioural factors associated with churn. This implies increasing customer engagement could be an important opportunity for improving retention.
 
 **Insight 3: [Geography matters, while credit card ownership appears to have little influence]**
-[Germany recorded a 32% churn rate, approximately twice the rate observed in France and Spain (around 16-17%). In contrast, churn was almost identical between customers with and without a credit card (20% vs 21%), illustrating ownership alone is not an important differentiator of churn.]
+Germany recorded a 32% churn rate, approximately twice the rate observed in France and Spain (around 16-17%). In contrast, churn was almost identical between customers with and without a credit card (20% vs 21%), illustrating ownership alone is not an important differentiator of churn.
 
 **Insight 4: [Product ownership and activity identify an actionable high-risk segment]**
-[The deeper segmentation analysis found that single-product, inactive customers consistently experienced higher churn than active and multiproduct customers, making this a priority group for retention initiatives. Some customers holding four products recorded churn rates of up to 100%, but these segments contained relatively few customers and should therefore be interpreted cautiously.]
+The deeper segmentation analysis found that single-product, inactive customers consistently experienced higher churn than active and multiproduct customers, making this a priority group for retention initiatives. Some customers holding four products recorded churn rates of up to 100%, but these segments contained relatively few customers and should therefore be interpreted cautiously.
+
+**Insight 5: The tenure hypothesis was only partially supported.**
+The analysis initially hypothesised that newer customers would be more likely to churn. Customers with zero years of tenure did show elevated churn at approximately 23%, but churn did not consistently decline as tenure increased and fluctuated throughout the customer lifecycle. This shows that tenure alone is not a strong indicator of churn and should be considered alongside other customer characteristics.
+
+**Insight 6: Customer balance is associated with differences in churn risk.**
+Churn varied considerably across balance groups, with customers holding £1–£49,999 showing the highest churn rate at approximately 35%, compared with approximately 14% among zero-balance customers. Churned customers also held a higher average balance than retained customers, suggesting that customer attrition may have financial significance beyond the number of customers lost.
+
+
 
 ---
 
