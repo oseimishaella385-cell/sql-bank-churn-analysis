@@ -348,35 +348,17 @@ erDiagram
 
 ## 9. Key Insights
 
-<!--
-  Findings + implications. Not just what happened - what it means.
-
-  WHAT GOOD LOOKS LIKE:
-  ✅ "Return rates, not sales volume, explain Region A's underperformance.
-      Region A's return rate on home goods was 34% - more than double the
-      company average. Revenue was not lost at the point of sale; it was
-      lost post-sale through refunds. This points to a fulfilment or
-      product quality issue specific to that region, not a demand problem."
-
-  WHAT TO AVOID:
-  ❌ "Region A had lower revenue than other regions in Q4."
-     (That's an observation. It describes what happened.
-      An insight says what it means and where to look next.)
-
-  Aim for 3–6 insights—quality over quantity.
--->
-
 **Insight 1: [Middle-aged customers represent the highest churn risk]**
 [Customers aged 50-59 recorded the highest churn rate at 56%, considerably above the 20.37% overall churn rate. Churn was also elevated among customers aged 40-49 and 60-69, suggesting retention efforts should place greater focus on middle-aged and older segments.]
 
 **Insight 2: [Customer engagement is strongly associated with retention.]**
-[Inactive members recorded a 27% churn rate compared with 14% for active members, making inactivity one of the clearest]
+[Inactive members recorded a 27% churn rate compared with 14% for active members, making inactivity one of the clearest behavioural factors associated with churn. This implies increasing customer engagement could be an important opportunity for improving retention.] 
 
-**Insight 3: [Short descriptive headline]**
-[What you found + what it suggests.]
+**Insight 3: [Geography matters, while credit card ownership appears to have little influence]**
+[Germany recorded a 32% churn rate, approximately twice the rate observed in France and Spain (around 16-17%). In contrast, churn was almost identical between customers with and without a credit card (20% vs 21%), illustrating ownership alone is not an important differentiator of churn.]
 
-**Insight 4 (if applicable): [Short descriptive headline]**
-[What you found + what it suggests.]
+**Insight 4: [Product ownership and activity identify an actionable high-risk segment]**
+[The deeper segmentation analysis found that single-product, inactive customers consistently experienced higher churn than active and multiproduct customers, making this a priority group for retention initiatives. Some customers holding four products recorded churn rates of up to 100%, but these segments contained relatively few customers and should therefore be interpreted cautiously.]
 
 ---
 
