@@ -13,7 +13,7 @@ Business problem: The bank has seen an increase in customer attrition over the p
 - [ ] Predictive Modelling / Machine Learning
 - [x] Data Cleaning / Wrangling
 - [ ] End-to-End (multiple of the above)
--
+
 ---
 
 ## Table of Contents
