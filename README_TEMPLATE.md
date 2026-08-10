@@ -297,16 +297,16 @@ SQL aggregation and conditional logic — used COUNT(), SUM(), AVG(), CASE and G
 .
 ## 9. Key Insights
 
-**Insight 1: [Middle-aged customers represent the highest churn risk]**
+**Insight 1: Middle-aged customers represent the highest churn risk**
 Customers aged 50-59 recorded the highest churn rate at 56%, considerably above the 20.37% overall churn rate. Churn was also elevated among customers aged 40-49 and 60-69, suggesting retention efforts should place greater focus on middle-aged and older segments.
 
-**Insight 2: [Customer engagement is strongly associated with retention.]**
+**Insight 2: Customer engagement is strongly associated with retention.**
 Inactive members recorded a 27% churn rate compared with 14% for active members, making inactivity one of the clearest behavioural factors associated with churn. This implies increasing customer engagement could be an important opportunity for improving retention.
 
-**Insight 3: [Geography matters, while credit card ownership appears to have little influence]**
+**Insight 3: Geography matters, while credit card ownership appears to have little influence**
 Germany recorded a 32% churn rate, approximately twice the rate observed in France and Spain (around 16-17%). In contrast, churn was almost identical between customers with and without a credit card (20% vs 21%), illustrating ownership alone is not an important differentiator of churn.
 
-**Insight 4: [Product ownership and activity identify an actionable high-risk segment]**
+**Insight 4: Product ownership and activity identify an actionable high-risk segment**
 The deeper segmentation analysis found that single-product, inactive customers consistently experienced higher churn than active and multiproduct customers, making this a priority group for retention initiatives. Some customers holding four products recorded churn rates of up to 100%, but these segments contained relatively few customers and should therefore be interpreted cautiously.
 
 **Insight 5: The tenure hypothesis was only partially supported.**
@@ -342,9 +342,12 @@ Churn varied considerably across balance groups, with customers holding £1–£
 
 | Priority | Recommendation | Based On | Suggested Owner |
 |----------|---------------|----------|-----------------|
-| High | [Specific, actionable step] | [Insight it comes from] | [Who should act] |
-| Medium | [Specific, actionable step] | [Insight it comes from] | [Who should act] |
-| Low | [Exploratory or longer-term suggestion] | [Insight it comes from] | [Who should act] |
+| High | Launch targeted re-engagement campaign for inactive customers, prioritising single product, inactive customers | Insight 2 & 4 - Inactive customers had 27% churn vs 14% for active customers, while deeper segmentation identified single product + inactive customers as a key high risk.  | Customer Retention team |
+| High | Target customers aged 40-69 with a pilot retention campaign, preferably using personalised offers and proactive account reviews. Then track campaign response and subsequent churn to determine which interventions are most effective.| Insight 1 - Customers aged 50-59 recorded the highest age group churn rate at 56% compared with the 20.37% overall churn rate. | Customer retention or Marketing Team |
+| High | Introduce proactive retention monitoring  for higher balance customers showing signs of disengagement.| Insight 6 - churn varies by balance group and churned customers held a higher average balance than retained customers.| Relationship Management|
+| Medium | Investigate the customer experience in Germany to identify potential service, product differences or pricing  before implementing country-specific retention initiatives.| Insight 3 - Germany recorded approximately 32% churn compared with around 16-17% in France and Spain. | Regional Management or Customer Experience Team |
+| Medium | Investigate the unusually high churn amongst customers holding 3+ products before taking action. | Insight 4 - some four-product segments recorded churn rates of 100%; however, customer counts were small and therefore require cautious interpretation.| Customer Insights or Product Team|
+| Low | Continue to monitor churn by tenure alongside other strong behavioural indicators. | Insight 5 - Tenure hypothesis was only partially supported with no consistent decline in churn as tenure increased. | Customer insights or analytical team |
 
 ---
 
