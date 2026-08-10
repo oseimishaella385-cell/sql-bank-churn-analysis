@@ -5,17 +5,15 @@ Business problem: The bank has seen an increase in customer attrition over the p
 ---
 
 ## ⚙️ Project Type Flags
-> *Check what applies. This helps reviewers and collaborators understand the nature of the work at a glance. Delete this block before publishing.*
 
-- [ ] Exploratory Data Analysis (EDA)
-- [ ] SQL Analysis / Querying
-- [ ] Dashboard / Data Visualization
+- [x] Exploratory Data Analysis (EDA)
+- [x] SQL Analysis / Querying
+- [x] Dashboard / Data Visualisation
 - [ ] Data Pipeline / ETL
 - [ ] Predictive Modelling / Machine Learning
-- [ ] Data Cleaning / Wrangling
+- [x] Data Cleaning / Wrangling
 - [ ] End-to-End (multiple of the above)
-- [ ] Other: ___________
-
+-
 ---
 
 ## Table of Contents
