@@ -363,14 +363,14 @@ erDiagram
      (That's an observation. It describes what happened.
       An insight says what it means and where to look next.)
 
-  Aim for 3–6 insights. Quality over quantity.
+  Aim for 3–6 insights—quality over quantity.
 -->
 
-**Insight 1: [Short descriptive headline]**
-[What you found + what it suggests. One short paragraph.]
+**Insight 1: [Middle-aged customers represent the highest churn risk]**
+[Customers aged 50-59 recorded the highest churn rate at 56%, considerably above the 20.37% overall churn rate. Churn was also elevated among customers aged 40-49 and 60-69, suggesting retention efforts should place greater focus on middle-aged and older segments.]
 
-**Insight 2: [Short descriptive headline]**
-[What you found + what it suggests.]
+**Insight 2: [Customer engagement is strongly associated with retention.]**
+[Inactive members recorded a 27% churn rate compared with 14% for active members, making inactivity one of the clearest]
 
 **Insight 3: [Short descriptive headline]**
 [What you found + what it suggests.]
