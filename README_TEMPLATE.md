@@ -285,7 +285,7 @@ Financial characteristics were then analysed by comparing churned and retained c
 | `Churned Customers` | Number of customers who exited the bank. | Shows the actual volume of customer attrition alongside percentage rates. |
 | `Average Customer Balance`| Mean account balance across customers| Provides an overview of the financial value held within the customer base.|
 | `Balance Held by Churned Customers` | Total account balance associated with customers classified as churned. | Indicates the potential financial significance of customer attrition, without assuming the full balance was lost by the bank.|
-| Median Estimated Salary | Middle estimated salary when customers are ordered by salary. | Allows comparison between churned and retained customers while reducing the influence of extreme salary values.|
+| `Median Estimated Salary` | Middle estimated salary when customers are ordered by salary. | Allows comparison between churned and retained customers while reducing the influence of extreme salary values.|
 |`Average Credit Score`| Mean credit score within a customer group. | Helps determine whether credit profile differs meaningfully between retained and churned customers.|
 
 ### Methods Used
