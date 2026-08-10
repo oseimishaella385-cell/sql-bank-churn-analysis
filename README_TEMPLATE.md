@@ -78,25 +78,13 @@ Business problem: The bank has seen an increase in customer attrition over the p
 
 ### Scope
 
-<!--
-  WHAT GOOD LOOKS LIKE:
-  In Scope: "Transaction-level data for Regions A–E, Jan 2023–Jun 2024.
-             Analysis covers revenue, return rates, and product category performance."
-  Out of Scope: "Customer demographics and marketing spend data were excluded -
-                 demographic data was incomplete for two regions, and marketing
-                 data sits in a separate system outside this engagement."
-
-  WHAT TO AVOID:
-  ❌ Leaving Out of Scope blank. This is the section that protects your credibility.
-     If you don't define the fence, reviewers assume you missed things.
--->
 
 | Dimension | Details |
 |-----------|---------|
-| **In Scope** | [What is included - data sources, time periods, segments] |
-| **Out of Scope** | [What you explicitly excluded - and a brief reason why] |
-| **Time Period** | [Date range of the data or the project itself] |
-| **Granularity** | [Unit of analysis - row-level, daily aggregates, per-user, etc.] |
+| **In Scope** | Customer-level data for 10,000 bank customers across France, Germany and Spain. Analysis covers customer demographics, behaviour, financial characteristics, churn rates and high-risk customer segments.
+| **Out of Scope** | Transaction-level activity, customer acquisition data and historical churn trends were excluded because the supplied dataset is a customer-level snapshot and does not contain transaction dates or longitudinal customer records. Individual customer-level analysis was also excluded; 'CustomerID' and 'Surname' were not required for the group-level churn analysis. |
+| **Time Period** | No transaction date or historical time period is provided in the dataset. |
+| **Granularity** | Customer level, with one row representing one customer and 10,000 records in total.|
 
 ### Tools & Technologies
 
