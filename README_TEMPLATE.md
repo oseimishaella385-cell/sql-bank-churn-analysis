@@ -194,14 +194,14 @@ Business problem: The bank has seen an increase in customer attrition over the p
 | `CreditScore` | INT | Customer credit score | 619 |
 | `Geography` | VARCHAR | Customer's Country | France |
 | `Gender` | VARCHAR| Customer gender| Female|
-| `Age | INT| Customer age |42|
-|Tenure | INT | Years as a customer | 2 |
-| Balance | DECIMAL | Current account balance |83807.86|
-|NumOfProducts| INT | Number of products held | 2 |
-| HasCrCard | BOOLEAN (0/1) | Credit card ownership | 1 |
-| IsActiveMember | BOOLEAN (0/1) | Active membership status | 1 |
-| EstimatedSalary | DECIMAL | Estimated annual salary (£) | 101348.88|
-| Exited | BOOLEAN (0/1) | Customer churn indicator | 1 |
+| `Age` | INT| Customer age |42|
+|`Tenure` | INT | Years as a customer | 2 |
+| `Balance` | DECIMAL | Current account balance |83807.86|
+|`NumOfProducts`| INT | Number of products held | 2 |
+| `HasCrCard` | BOOLEAN (0/1) | Credit card ownership | 1 |
+| `IsActiveMember` | BOOLEAN (0/1) | Active membership status | 1 |
+| `EstimatedSalary` | DECIMAL | Estimated annual salary (£) | 101348.88|
+| `Exited` | BOOLEAN (0/1) | Customer churn indicator | 1 |
 
 > **Row count (approx.):** [10,000 rows]
 > **Date range:** 2024
