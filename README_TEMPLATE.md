@@ -296,11 +296,11 @@ Churn varied considerably across balance groups, with customers holding £1–£
 
 ## 12. Future Enhancements
 
-- [ ] Incorporate historical and time-based data — Add customer churn dates and historical account activity to analyse how churn changes over time and identify behaviours that occur before customers leave.
+- [ ] Incorporate historical and time-based data - Add customer churn dates and historical account activity to analyse how churn changes over time and identify behaviours that occur before customers leave.
  
-- [ ] Integrate transaction and engagement data — Include transaction frequency, deposits, withdrawals, product usage and digital banking activity to better understand declining customer engagement and the potential drivers of churn.
-- [ ]  Include customer experience data — Incorporate complaints, satisfaction scores, service interactions, fees and customer feedback to investigate why high-churn segments, such as customers in Germany, are leaving.
-- [ ]  Develop and validate a predictive churn model — Use richer historical data to build a model that estimates individual customer churn risk, allowing the bank to identify at-risk customers before they exit and prioritise retention interventions.
+- [ ] Integrate transaction and engagement data - Include transaction frequency, deposits, withdrawals, product usage and digital banking activity to better understand declining customer engagement and the potential drivers of churn.
+- [ ]  Include customer experience data - Incorporate complaints, satisfaction scores, service interactions, fees and customer feedback to investigate why high-churn segments, such as customers in Germany, are leaving.
+- [ ]  Develop and validate a predictive churn model - Use richer historical data to build a model that estimates individual customer churn risk, allowing the bank to identify at-risk customers before they exit and prioritise retention interventions.
       
 
 ---
@@ -317,12 +317,12 @@ Churn varied considerably across balance groups, with customers holding £1–£
 
 ## 14. Author
 
-**[Your Name]**
+**Mishaella Osei**
 [Your role or title - current or target]
 
 - 🔗 [LinkedIn URL]
 - 💼 [Portfolio or GitHub profile URL]
-- 📧 [Email - optional]
+- 📧 [Email - Oseimishaella385@gmail.com]
 
 ---
 
