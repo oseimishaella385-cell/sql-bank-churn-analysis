@@ -278,7 +278,7 @@ Churn varied considerably across balance groups, with customers holding £1–£
   
 - Customer records were treated as independent observations; each row represents one unique customer.
   
-- Balance was treated as the customer's recorded account balance. Balance was analysed to assess the potential financial significance of churn, but does not assume the entire balance was lost by the bank when the customer exited.
+- `Balance` was treated as the customer's recorded account balance. `Balance` was analysed to assess the potential financial significance of churn, but does not assume the entire balance was lost by the bank when the customer exited.
 
 ### Limitations
 - No date or historical information was available. The dataset provides a snapshot of customers rather than observations over time; therefore, the analysis cannot determine when customers churned, churn over time or whether events preceded churn.
