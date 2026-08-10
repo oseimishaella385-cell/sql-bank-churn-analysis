@@ -78,7 +78,7 @@ Business problem: The bank has seen an increase in customer attrition over the p
 | Analysis | custom SQL queries |
 | Visualisation |  Power BI |
 | Version Control | GitHub |
-| Documentation |  Markdown, Notion] |
+| Documentation |  Markdown |
 
 ---
 
