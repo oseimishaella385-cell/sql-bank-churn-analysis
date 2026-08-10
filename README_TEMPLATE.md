@@ -92,7 +92,6 @@ Business problem: The bank has seen an increase in customer attrition over the p
 │   ├── processed/            # Cleaned and transformed data
 │   └── external/             # Reference data, lookup tables, third-party files
 │
-├── notebooks/                # Jupyter, R Markdown, or Colab notebooks
 │
 ├── scripts/                  # Reusable .py, .R, or .sh processing files
 │
@@ -271,7 +270,7 @@ erDiagram
 ### Analytical Approach
 This project used exploratory and descriptive analysis to investigate the factors associated with customer churn. SQL was used to establish the overall churn baseline before comparing churn rates across demographic, behavioural and financial customer segments.
 
-The analysis began by testing the hypothesis that customers with less than one year of tenure would have a higher churn rate, before expanding into broader demographic factors such as age, geography and gender and behavioural factors including tenure, product ownership and membership activity.
+The analysis began by testing the hypothesis that customers with less than one year of tenure would have a higher churn rate, before expanding into broader demographic factors such as age, geography, and gender, and behavioural factors including tenure, product ownership, and membership activity.
 
 Financial characteristics were then analysed by comparing churned and retained customers and examining churn rates across different balance groups. Finally, multi-factor segmentation was used to identify high-risk customer groups and translate the findings into targeted retention recommendations.
 
@@ -321,87 +320,49 @@ Churn varied considerably across balance groups, with customers holding £1–£
 
 ## 10. Recommendations
 
-<!--
-  Action-oriented. Addressed to a real audience.
-  Tied explicitly to the insight that supports each one.
-
-  WHAT GOOD LOOKS LIKE:
-  Priority: High
-  Recommendation: "Conduct a fulfilment audit for home goods deliveries
-                   in Region A - specifically investigating whether returns
-                   correlate with a particular warehouse, carrier, or SKU batch."
-  Based On: Insight 1 - return rate anomaly in Region A
-  Owner: Operations / Supply Chain team
-
-  WHAT TO AVOID:
-  ❌ "Improve the return rate."
-     (Not actionable. Doesn't say who, how, or where to start.)
-  ❌ "Further analysis is needed."
-     (This is a placeholder, not a recommendation.)
--->
 
 | Priority | Recommendation | Based On | Suggested Owner |
 |----------|---------------|----------|-----------------|
-| High | Launch targeted re-engagement campaign for inactive customers, prioritising single product, inactive customers | Insight 2 & 4 - Inactive customers had 27% churn vs 14% for active customers, while deeper segmentation identified single product + inactive customers as a key high risk.  | Customer Retention team |
+| High | Launch targeted re-engagement campaign for inactive customers, prioritising single product, inactive customers | Insight 2 & 4 - Inactive customers had 27% churn vs 14% for active customers, while deeper segmentation identified single product + inactive customers as a key high-risk.  | Customer Retention team |
 | High | Target customers aged 40-69 with a pilot retention campaign, preferably using personalised offers and proactive account reviews. Then track campaign response and subsequent churn to determine which interventions are most effective.| Insight 1 - Customers aged 50-59 recorded the highest age group churn rate at 56% compared with the 20.37% overall churn rate. | Customer retention or Marketing Team |
 | High | Introduce proactive retention monitoring  for higher balance customers showing signs of disengagement.| Insight 6 - churn varies by balance group and churned customers held a higher average balance than retained customers.| Relationship Management|
 | Medium | Investigate the customer experience in Germany to identify potential service, product differences or pricing  before implementing country-specific retention initiatives.| Insight 3 - Germany recorded approximately 32% churn compared with around 16-17% in France and Spain. | Regional Management or Customer Experience Team |
 | Medium | Investigate the unusually high churn amongst customers holding 3+ products before taking action. | Insight 4 - some four-product segments recorded churn rates of 100%; however, customer counts were small and therefore require cautious interpretation.| Customer Insights or Product Team|
-| Low | Continue to monitor churn by tenure alongside other strong behavioural indicators. | Insight 5 - Tenure hypothesis was only partially supported with no consistent decline in churn as tenure increased. | Customer insights or analytical team |
+| Low | Continue to monitor churn by tenure alongside other strong behavioural indicators. | Insight 5 - Tenure hypothesis was only partially supported, with no consistent decline in churn as tenure increased. | Customer insights or analytical team |
 
 ---
 
 ## 11. Assumptions & Limitations
 
-<!--
-  WHAT GOOD LOOKS LIKE:
-  Assumption: "Transaction records were assumed to be complete for all five regions.
-               No validation was performed against source system record counts."
-  Limitation: "The analysis cannot distinguish between returns initiated by
-               the customer vs. returns initiated by the business (e.g., recalls).
-               If business-initiated returns are concentrated in Region A, the
-               return rate finding may reflect a policy decision, not a quality issue."
-
-  WHAT TO AVOID:
-  ❌ Leaving this section blank or writing "None known."
-     Every project has limitations. Documenting them is a sign of
-     analytical maturity - not a confession of failure.
--->
-
 ### Assumptions
-- [What did you treat as true without being able to verify?]
-- [What simplifications did you make for scope or feasibility?]
-- [What domain rules or definitions did you accept as given?]
+- `Exited` was treated as the definition of Customer Churn. A value of `1` was assumed to represent a customer who had left the bank, while `0` represented a retained  customer.
+  
+- Customer attributes were assumed to be accurate at the point of observation (e.g., balance, estimated salary, tenure and membership status) and were analysed as provided in the source dataset.
+  
+- Customer records were treated as independent observations; each row represents one unique customer.
+  
+- Balance was treated as the customer's recorded account balance. Balance was analysed to assess the potential financial significance of churn, but does not assume the entire balance was lost by the bank when the customer exited.
 
 ### Limitations
-- [What gaps exist in the data?]
-- [What analysis was out of scope but could affect interpretation?]
-- [What would a more rigorous version of this project include?]
-- [Are there known biases in the data source or collection method?]
+- No date or historical information was available. The dataset provides a snapshot of customers rather than observations over time; therefore, the analysis cannot determine when customers churned, churn over time or whether events preceded churn.
+- No transaction-level data available; information such as transaction frequency, spending behaviour, deposits, or changes in account usage was unavailable. These factors would give insight into customer disengagement before churn.
+  
+- The analysis identifies associations rather than cues. For example, customers aged 50-59 recorded the highest churn rate; however, the dataset does not explain why these customers are leaving.
+  
+- Some high-risk segments contain relatively few customers. For example, some three- and four-product customer groups showed extremely high churn rates, but their small customer counts mean these percentages should be interpreted cautiously.
 
-> *The goal here is pre-emptive Q&A. What would a thoughtful skeptic push back on? Document the answer here, before they ask.*
+- No predictive or statistical significance modelling was performed. The project uses exploratory and descriptive analysis, so further analysis would be required to determine the independent contribution of each factor to churn or predict individual customer churn risk.
 
 ---
 
 ## 12. Future Enhancements
 
-<!--
-  WHAT GOOD LOOKS LIKE:
-  ✅ "Automate the monthly data pull from the POS export folder using
-      a scheduled Python script, replacing the current manual process."
-  ✅ "Expand the return rate analysis to include carrier-level data,
-      which was unavailable in this dataset but exists in the logistics system."
-
-  WHAT TO AVOID:
-  ❌ "Add a machine learning model."
-     (Vague, and disconnected from the actual findings of this project.)
-  ❌ Listing aspirational features that don't follow logically from the work.
--->
-
-- [ ] [Enhancement 1 - specific and traceable to a real gap in this project]
-- [ ] [Enhancement 2]
-- [ ] [Enhancement 3]
-- [ ] [Enhancement 4]
+- [ ] Incorporate historical and time-based data — Add customer churn dates and historical account activity to analyse how churn changes over time and identify behaviours that occur before customers leave.
+ 
+- [ ] Integrate transaction and engagement data — Include transaction frequency, deposits, withdrawals, product usage and digital banking activity to better understand declining customer engagement and the potential drivers of churn.
+- [ ]  Include customer experience data — Incorporate complaints, satisfaction scores, service interactions, fees and customer feedback to investigate why high-churn segments, such as customers in Germany, are leaving.
+- [ ]  Develop and validate a predictive churn model — Use richer historical data to build a model that estimates individual customer churn risk, allowing the bank to identify at-risk customers before they exit and prioritise retention interventions.
+      
 
 ---
 
