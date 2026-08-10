@@ -75,7 +75,7 @@ Business problem: The bank has seen an increase in customer attrition over the p
 |----------|-------------|
 | Data Storage |  CSV files |
 | Data Processing |  SQL, Excel |
-| Analysis | custom SQL queries |
+| Analysis | Custom SQL queries |
 | Visualisation |  Power BI |
 | Version Control | GitHub |
 | Documentation |  Markdown |
@@ -227,11 +227,11 @@ Financial characteristics were then analysed by comparing churned and retained c
 |`Average Credit Score`| Mean credit score within a customer group. | Helps determine whether credit profile differs meaningfully between retained and churned customers.|
 
 ### Methods Used
-Descriptive statistics — counts, percentages, averages and medians.
-Segmentation analysis — compared churn across demographic, behavioural and financial customer groups.
-Churned vs retained comparison — compared the financial profiles of customers who stayed and exited.
-Multi-factor analysis — combined product ownership and membership activity to identify high-risk segments.
-SQL aggregation and conditional logic — used COUNT(), SUM(), AVG(), CASE and GROUP BY to produce analytical outputs.
+Descriptive statistics - counts, percentages, averages and medians.
+Segmentation analysis - compared churn across demographic, behavioural and financial customer groups.
+Churned vs retained comparison - compared the financial profiles of customers who stayed and exited.
+Multi-factor analysis - combined product ownership and membership activity to identify high-risk segments.
+SQL aggregation and conditional logic - used COUNT(), SUM(), AVG(), CASE and GROUP BY to produce analytical outputs.
 .
 ## 9. Key Insights
 
