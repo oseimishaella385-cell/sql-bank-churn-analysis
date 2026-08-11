@@ -12,7 +12,7 @@ Business problem: The bank is experiencing customer attrition and wants to under
 - [ ] Data Pipeline / ETL
 - [ ] Predictive Modelling / Machine Learning
 - [x] Data Cleaning / Wrangling
-- [ ] End-to-End (multiple of the above)
+- [x] End-to-End (multiple of the above)
 
 ---
 
