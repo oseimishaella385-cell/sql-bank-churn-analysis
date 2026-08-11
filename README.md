@@ -113,9 +113,9 @@ bank-customer-churn-analysis/
 │       └── 05_high_risk_segments.sql
 │
 ├── visuals/
-│   ├── dashboard_page_1.png
-│   ├── dashboard_page_2.png
-│   └── powerbi_data_model.png
+│   |── Churn_overview_dashboard_Pg1.png
+│   └── Churn_overview_Germany_pg1.png
+│   
 │
 └── README.md
 ```
