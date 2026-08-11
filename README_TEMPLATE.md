@@ -59,11 +59,11 @@ Business problem: The bank has seen an increase in customer attrition over the p
 
 
 The analysis was designed to answer:
-Who is churning?
-What customer behaviours are associated with churn?
-Are financially valuable customers being lost?
-Which combinations of characteristics identify the highest-risk customer segments?
-Where should retention efforts be prioritised?
+- Who is churning?
+- What customer behaviours are associated with churn?
+- Are financially valuable customers being lost?
+- Which combinations of characteristics identify the highest-risk customer segments?
+- Where should retention efforts be prioritised?
 
 ---
 
