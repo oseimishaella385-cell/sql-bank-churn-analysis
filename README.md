@@ -327,9 +327,9 @@ Churn varied considerably across balance groups, with customers holding £1–£
 **Mishaella Osei**
 Aspiring Data Analyst
 
-- 🔗 [LinkedIn URL]
+- 🔗 www.linkedin.com/in/mishaella-osei-1510mo
 - 💼 [Portfolio or GitHub profile URL]
-- 📧 [Email - Oseimishaella385@gmail.com]
+- 📧 Email - Oseimishaella385@gmail.com
 
 ---
 
