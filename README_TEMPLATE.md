@@ -302,6 +302,7 @@ Churn varied considerably across balance groups, with customers holding £1–£
       
 
 ---
+## 13. Deliverables
 | Deliverable | Description | Location |
 |---|---|---|
 | Power BI Dashboard | Two-page dashboard presenting churn analysis and high-risk segments. | [View Dashboard Screenshots](visuals/) |
@@ -309,20 +310,13 @@ Churn varied considerably across balance groups, with customers holding £1–£
 | Customer Analysis View | SQL view containing transformed analytical fields. | [View Transformation](queries/transformations/) |
 | Raw Dataset | Original customer churn dataset. | [View Raw Data](data/raw/) |
 | Project Documentation | Full project methodology, findings and recommendations. | [README](README.md) |
-## 13. Deliverables
-
-| Deliverable | Description | Location |
-|-------------|-------------|----------|
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
 
 ---
 
 ## 14. Author
 
 **Mishaella Osei**
-[Your role or title - current or target]
+Aspiring Data Analyst
 
 - 🔗 [LinkedIn URL]
 - 💼 [Portfolio or GitHub profile URL]
@@ -330,5 +324,5 @@ Churn varied considerably across balance groups, with customers holding £1–£
 
 ---
 
-*Last updated: [Month YYYY]*
-*If this template helped you, consider starring the repository.*
+*Last updated: August 2026*
+
