@@ -302,7 +302,13 @@ Churn varied considerably across balance groups, with customers holding £1–£
       
 
 ---
-
+| Deliverable | Description | Location |
+|---|---|---|
+| Power BI Dashboard | Two-page dashboard presenting churn analysis and high-risk segments. | [View Dashboard Screenshots](visuals/) |
+| SQL Analysis | SQL queries used for analysis, transformation and dashboard outputs. | [View SQL Queries](queries/) |
+| Customer Analysis View | SQL view containing transformed analytical fields. | [View Transformation](queries/transformations/) |
+| Raw Dataset | Original customer churn dataset. | [View Raw Data](data/raw/) |
+| Project Documentation | Full project methodology, findings and recommendations. | [README](README.md) |
 ## 13. Deliverables
 
 | Deliverable | Description | Location |
