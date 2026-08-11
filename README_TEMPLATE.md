@@ -54,6 +54,17 @@ Business problem: The bank has seen an increase in customer attrition over the p
 - **Secondary Objective 2:** Compare the financial profiles of churned and retained customers
 - **Secondary Objective 3:** Identify high-risk customer segments to prioritise retention efforts.
 - **Secondary Objective 4:** Recommend data-driven actions to improve customer retention
+
+## 2b. Analytical Questions ##
+
+
+The analysis was designed to answer:
+Who is churning?
+What customer behaviours are associated with churn?
+Are financially valuable customers being lost?
+Which combinations of characteristics identify the highest-risk customer segments?
+Where should retention efforts be prioritised?
+
 ---
 
 ## 3. Project Scope & Tools
