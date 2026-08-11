@@ -1,5 +1,5 @@
 # What factors are associated with customer churn, and what actions should the bank take to improve customer retention?
-Business problem: The bank has seen an increase in customer attrition over the past year. Senior management wants to understand which customers are leaving and identify strategies to improve retention.
+Business problem: The bank is experiencing customer attrition and wants to understand which customer groups are most likely to churn and where retention efforts should be prioritised.
 
 
 ---
@@ -124,8 +124,6 @@ bank-customer-churn-analysis/
 
 ## 5. Data Workflow
 
--->
-
 ```
 [Kaggle CSV Dataset]
 10,000 bank customers
@@ -148,7 +146,7 @@ Interactive dashboard - key insights - retention recommendations
 3. **Cleaning:** Validated the dataset for missing values and duplicate records. Removed non-analytical fields (CustomerId and Surname) as they were not required for customer segmentation or churn analysis. Verified data types and binary variables (0/1) for consistency.
 4. **Transformation:** Converted binary fields into descriptive categories (e.g. Stayed/Churned, Active/Inactive, Credit Card Yes/No). Created age, balance and income groups to support customer segmentation. Calculated churn metrics and summary statistics for demographic, behavioural and financial analysis.
 5. **Analysis:** Query-based analysis using SQL with descriptive statistics (counts, averages, medians and percentages) to measure churn, compare customer segments and identify high-risk groups.
-6. **Output:** Summary report (Power BI), processed CSV
+6. **Output:** Two-page interactive Power BI dashboard, SQL analysis and documented business recommendations.
 
 ---
 
@@ -293,7 +291,7 @@ Churn varied considerably across balance groups, with customers holding £1–£
 - No date or historical information was available. The dataset provides a snapshot of customers rather than observations over time; therefore, the analysis cannot determine when customers churned, churn over time or whether events preceded churn.
 - No transaction-level data available; information such as transaction frequency, spending behaviour, deposits, or changes in account usage was unavailable. These factors would give insight into customer disengagement before churn.
   
-- The analysis identifies associations rather than cues. For example, customers aged 50-59 recorded the highest churn rate; however, the dataset does not explain why these customers are leaving.
+- The analysis identifies associations rather than causal relationships. For example, customers aged 50-59 recorded the highest churn rate; however, the dataset does not explain why these customers are leaving.
   
 - Some high-risk segments contain relatively few customers. For example, some three- and four-product customer groups showed extremely high churn rates, but their small customer counts mean these percentages should be interpreted cautiously.
 
