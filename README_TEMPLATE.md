@@ -36,27 +36,24 @@ Business problem: The bank has seen an increase in customer attrition over the p
 
 ## 1. Project Overview
 
-**Context:** A mid-sized bank experienced a noticeable increase in customer attrition over the previous 12 months but lacked a clear understanding of which customers were leaving and why. Management required a better understanding of which customers were leaving and the factors associated with churn.
+**Context:** A mid-sized bank is experiencing a noticeable increase in customer attrition and needs greater insight into the customers most at risk of leaving.
 
-**Problem Statement:** What factors are associated with customer churn, and what actions should the bank take to improve customer retention?
+**Problem Statement:** The bank lacks a clear understanding of the demographic, behavioural and financial characteristics associated with customer churn, making it difficult to determine where retention efforts should be prioritised.
 
-**Approach:** Customer data was analysed using SQL to calculate churn rates, Segment customers by demographic, behavioural and financial characteristics, and identify high-risk customer groups.
+**Approach:** Customer data was analysed using SQL to calculate churn rates, segment customers by demographic, behavioural and financial characteristics, and identify high-risk customer groups.
 
-**Outcome:** The analysis identified several customer characteristics associated with higher churn, including age, inactivity, product ownership and account balance. The final deliverable was an interactive dashboard that provides management with actionable insights to prioritise customer retention initiatives
-
-
+**Outcome:** The analysis identified several customer characteristics associated with elevated churn, including age, inactivity, product ownership, and account balance. The findings were presented in an interactive Power BI dashboard designed to help management identify priority customer segments for retention initiatives.
 ---
 
 ## 2. Objectives
 
- **Primary Objective:** Measure the overall churn rate and identify the key factors associated with customer attrition.
-- **Secondary Objective 1:** Identify the characteristics of customers who are most likely to churn
-- **Secondary Objective 2:** Compare the financial profiles of churned and retained customers
-- **Secondary Objective 3:** Identify high-risk customer segments to prioritise retention efforts.
-- **Secondary Objective 4:** Recommend data-driven actions to improve customer retention
+ **Primary Objective:** Identify the customer characteristics and behaviours  associated with churn to support more targeted retention decisions. 
+- **Secondary Objective 1:** Measure the overall churn rate to establish a baseline.
+- **Secondary Objective 2:** Identify demographic groups with elevated churn across age, gender and geography.
+- **Secondary Objective 3:** Evaluate behavioural factors including tenure, membership activity, product ownership and credit card ownership.
+- **Secondary Objective 4:** Identify high-risk customer segments through multi-factor segmentation.
 
 ## 2b. Analytical Questions ##
-
 
 The analysis was designed to answer:
 - Who is churning?
