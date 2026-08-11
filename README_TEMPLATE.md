@@ -83,29 +83,32 @@ Business problem: The bank has seen an increase in customer attrition over the p
 ## 4. Repository Structure
 
 ```
-[project-root]/
+bank-customer-churn-analysis/
 │
 ├── data/
-│   ├── raw/                  # Original, unmodified source data - never edited
-│   ├── processed/            # Cleaned and transformed data
-│   └── external/             # Reference data, lookup tables, third-party files
+│   └── raw/
+│       └── bank_customer_churn.csv
 │
+├── queries/
+│   ├── exploratory/
+│   │   └── tenure_hypothesis.sql
+│   │
+│   ├── transformations/
+│   │   └── create_customer_analysis_view.sql
+│   │
+│   └── final/
+│       ├── 01_kpi_metrics.sql
+│       ├── 02_demographic_churn.sql
+│       ├── 03_customer_behaviour.sql
+│       ├── 04_financial_profile.sql
+│       └── 05_high_risk_segments.sql
 │
-├── scripts/                  # Reusable .py, .R, or .sh processing files
+├── visuals/
+│   ├── dashboard_page_1.png
+│   ├── dashboard_page_2.png
+│   └── powerbi_data_model.png
 │
-├── queries/                  # SQL files (retain this folder for SQL-heavy projects)
-│   ├── exploratory/          # Ad-hoc or investigative queries
-│   ├── transformations/      # Cleaning and reshaping logic
-│   └── final/                # Production-ready or presentation queries
-│
-├── reports/                  # Final outputs: PDFs, slide decks, Word docs
-│
-├── visuals/                  # Exported charts, dashboard screenshots, ERD diagrams
-│
-├── docs/                     # Data dictionaries, schema notes, reference material
-│
-├── project_metadata.yml      # Machine-readable metadata (optional)
-└── README.md                 # You are here
+└── README.md
 ```
 
 > ⚠️ *Delete folders you didn't use. An empty folder is worse than no folder.*
