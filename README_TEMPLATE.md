@@ -42,7 +42,8 @@ Business problem: The bank has seen an increase in customer attrition over the p
 
 **Approach:** Customer data was analysed using SQL to calculate churn rates, segment customers by demographic, behavioural and financial characteristics, and identify high-risk customer groups.
 
-**Outcome:** The analysis identified several customer characteristics associated with elevated churn, including age, inactivity, product ownership, and account balance. The findings were presented in an interactive Power BI dashboard designed to help management identify priority customer segments for retention initiatives.
+ **Outcome:** The analysis identified several customer characteristics associated with elevated churn, including age, inactivity, product ownership, and account balance. The findings were presented in an interactive Power BI dashboard designed to help management identify priority customer segments for retention initiatives.
+
 ---
 
 ## 2. Objectives
