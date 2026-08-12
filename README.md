@@ -1,5 +1,5 @@
 # What factors are associated with customer churn, and what actions should the bank take to improve customer retention?
-Business problem: The bank is experiencing customer attrition and wants to understand which customer groups are most likely to churn and where retention efforts should be prioritised.
+**Business problem:** The bank is experiencing customer attrition and wants to understand which customer groups are most likely to churn and where retention efforts should be prioritised.
 
 
 ---
