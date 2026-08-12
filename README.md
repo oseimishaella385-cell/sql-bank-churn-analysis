@@ -113,7 +113,7 @@ bank-customer-churn-analysis/
 │       └── 05_high_risk_segments.sql
 │
 ├── visuals/
-│   |── Pg1_Churn_overview_dashboard.png
+│   ├── Pg1_Churn_overview_dashboard.png
 │   ├── Pg1_Churn_overview_Germany.png
 │   ├── Pg1_tenure_interaction.png
 │   ├── Pg2_financial_profile_dashboard.png
