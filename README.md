@@ -92,7 +92,7 @@ The analysis was designed to answer:
 ## 4. Repository Structure
 
 ```
-bank-customer-churn-analysis/
+sql-bank-churn-analysis/
 │
 ├── data/
 │   └── raw/
