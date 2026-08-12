@@ -113,8 +113,12 @@ bank-customer-churn-analysis/
 │       └── 05_high_risk_segments.sql
 │
 ├── visuals/
-│   |── Churn_overview_dashboard_Pg1.png
-│   └── Churn_overview_Germany_pg1.png
+│   |── Pg1_Churn_overview_dashboard.png
+│   ├── Pg1_Churn_overview_Germany.png
+│   ├── Pg1_tenure_interaction.png
+│   ├── Pg2_financial_profile_dashboard.png
+│   ├── Pg2_customer_seg_interaction.png
+│   └── powerbi_data_model.png
 │   
 │
 └── README.md
@@ -228,7 +232,7 @@ Financial characteristics were then analysed by comparing churned and retained c
 | `Churned Customers` | Number of customers who exited the bank. | Shows the actual volume of customer attrition alongside percentage rates. |
 | `Average Customer Balance`| Mean account balance across customers| Provides an overview of the financial value held within the customer base.|
 | `Balance Held by Churned Customers` | Total account balance associated with customers classified as churned. | Indicates the potential financial significance of customer attrition, without assuming the full balance was lost by the bank.|
-| `Median Estimated Salary` | Middle estimated salary when customers are ordered by salary. | Allows comparison between churned and retained customers while reducing the influence of extreme salary values.|
+| `Median Estimated Salary` | Median estimated salary when customers are ordered by salary. | Allows comparison between churned and retained customers while reducing the influence of extreme salary values.|
 |`Average Credit Score`| Mean credit score within a customer group. | Helps determine whether credit profile differs meaningfully between retained and churned customers.|
 
 ### Methods Used
