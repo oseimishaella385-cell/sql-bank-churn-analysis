@@ -36,7 +36,7 @@ Business problem: The bank is experiencing customer attrition and wants to under
 
 ## 1. Project Overview
 
-**Context:** A mid-sized bank is experiencing a noticeable increase in customer attrition and needs greater insight into the customers most at risk of leaving.
+**Context:** A mid-sized bank is experiencing customer attrition and needs greater insight into the customers most at risk of leaving.
 
 **Problem Statement:** The bank lacks a clear understanding of the demographic, behavioural and financial characteristics associated with customer churn, making it difficult to determine where retention efforts should be prioritised.
 
@@ -124,7 +124,7 @@ bank-customer-churn-analysis/
 └── README.md
 ```
 
----
+
 
 ## 5. Data Workflow
 
@@ -148,7 +148,7 @@ Interactive dashboard - key insights - retention recommendations
 1. **Source:** Bank Customer Churn Prediction Dataset downloaded from Kaggle. One CSV file containing 10,000 customer records across three countries (France, Germany and Spain), with demographic, behavioural and financial attributes.
 2. **Ingestion:** Imported the CSV into MySQL using the Table Data Import Wizard. Data was stored in a relational table and queried using SQL before being imported into Power BI for visualisation.
 3. **Cleaning:** Validated the dataset for missing values and duplicate records. Removed non-analytical fields (CustomerId and Surname) as they were not required for customer segmentation or churn analysis. Verified data types and binary variables (0/1) for consistency.
-4. **Transformation:** Converted binary fields into descriptive categories (e.g. Stayed/Churned, Active/Inactive, Credit Card Yes/No). Created age, balance and income groups to support customer segmentation. Calculated churn metrics and summary statistics for demographic, behavioural and financial analysis.
+4. **Transformation:** Converted binary fields into descriptive categories (e.g. Retained/Churned, Active/Inactive, Credit Card Yes/No). Created age, balance and income groups to support customer segmentation. Calculated churn metrics and summary statistics for demographic, behavioural and financial analysis.
 5. **Analysis:** Query-based analysis using SQL with descriptive statistics (counts, averages, medians and percentages) to measure churn, compare customer segments and identify high-risk groups.
 6. **Output:** Two-page interactive Power BI dashboard, SQL analysis and documented business recommendations.
 
