@@ -6,7 +6,7 @@
 
 ## ⚙️ Project Type Flags
 
-- [] Exploratory Data Analysis (EDA)
+- [ ] Exploratory Data Analysis (EDA)
 - [x] SQL Analysis / Querying
 - [x] Dashboard / Data Visualisation
 - [ ] Data Pipeline / ETL
