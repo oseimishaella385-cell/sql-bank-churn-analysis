@@ -216,7 +216,7 @@ The data model below shows how the source customer data was structured into anal
 ## 8. Analysis & Metrics
 
 ### Analytical Approach
-This project used exploratory and descriptive analysis to investigate the factors associated with customer churn. SQL was used to establish the overall churn baseline before comparing churn rates across demographic, behavioural and financial customer segments.
+This project used descriptive analysis to investigate the factors associated with customer churn. SQL was used to establish the overall churn baseline before comparing churn rates across demographic, behavioural and financial customer segments.
 
 The analysis began by testing the hypothesis that customers with less than one year of tenure would have a higher churn rate, before expanding into broader demographic factors such as age, geography, and gender, and behavioural factors including tenure, product ownership, and membership activity.
 
